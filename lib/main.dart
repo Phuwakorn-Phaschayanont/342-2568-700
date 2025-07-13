@@ -8,13 +8,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily:''),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily:'Kanit'),
       home: Container (
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/background2.jpg'),
             fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(Colors.black45, BlendMode.darken)
           ),
         ),
         child: Scaffold(
@@ -26,49 +27,49 @@ class MyApp extends StatelessWidget {
           body: Column(children: [
               const SizedBox(height: 30),
               CircleAvatar(backgroundImage: AssetImage('assets/images/profile1.jpg'),
-                radius: 100,
+                radius: 110,
               ),
               const SizedBox(height: 30),
               const ListTile(
                 title: Text(' Name : Phuwakorn Phaschayanont', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.person, color: Colors.cyanAccent, size: 30,
+                  Icons.person, color: Colors.lightGreenAccent, size: 30,
                 ),
               ),
               const ListTile(
                 title: Text(' Date of birth : Nov 10, 2004', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.cake, color: Colors.cyanAccent, size: 30,
+                  Icons.cake, color: Colors.lightGreenAccent, size: 30,
                 ),
               ),
               const ListTile (
                 title: Text(' Education : Kasetsart University, Information Technology', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.school, color: Colors.cyanAccent, size: 30,
+                  Icons.school, color: Colors.lightGreenAccent, size: 30,
                 ),
               ),
               const ListTile(
-                title: Text(' Address : 102/2, Mueng City, Nakhon Pathom, 73000', style: TextStyle(fontSize: 20, color: Colors.white)
+                title: Text(' Address : 102/2, Mueang City, Nakhon Pathom, 73000', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.location_on, color: Colors.cyanAccent, size: 30,
+                  Icons.location_on, color: Colors.lightGreenAccent, size: 30,
                 ),
               ),
               const ListTile(
                 title: Text(' Phone : +66 1408 2087', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.phone, color: Colors.cyanAccent, size: 30,
+                  Icons.phone, color: Colors.lightGreenAccent, size: 30,
                 ),
               ),
               const ListTile(
                 title: Text(' Email : phuwakorn.p@ku.th', style: TextStyle(fontSize: 20, color: Colors.white)
                 ),
                 leading: Icon(
-                  Icons.email, color: Colors.cyanAccent, size: 30,
+                  Icons.email, color: Colors.lightGreenAccent, size: 30,
                 ),
               )
             ],
